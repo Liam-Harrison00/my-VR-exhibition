@@ -1,0 +1,61 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My VR Exhibition</title> 
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>
+  </head>
+<body>
+   <a-scene>
+       <a-camera>
+        <a-cursor color="#ff0000"></a-cursor>
+       </a-camera>
+
+       <a-entity id="exhibition-panel">
+
+        <a-image src="assets/table-blender.png" position="0 2.131 0.04893" scale="1.84272 1.84272 1.84272" material="" geometry=""></a-image>
+
+        <a-entity id="panel" geometry="" material="src: assets/stone texture.jpeg" position="0 1.91862 0" scale="3.01323 2.80034 0.07076" rotation=""></a-entity>
+
+    </a-entity>
+
+    
+    <a-entity id="panel-2" position="-5.1604 0 0" visible="">
+
+        <a-image src="assets/final gym.png" position="0 2.131 0.04893" scale="1.84272 1.84272 1.84272" material="" geometry=""></a-image>
+
+        <a-entity id="panel" geometry="" material="src: assets/stone texture.jpeg" position="0 1.91862 0" scale="3.01323 2.80034 0.07076" rotation=""></a-entity>
+
+    </a-entity>
+    
+    
+
+    <a-entity id="exhibition-panel-2" position="9.96576 0 0" visible="">
+
+        <a-image src="assets/render mug.png" position="0 2.131 0.04893" scale="1.84272 1.84272 1.84272" material="" geometry=""></a-image>
+
+        <a-entity id="panel" geometry="" material="src: assets/stone texture.jpeg" position="0 1.91862 0" scale="3.01323 2.80034 0.07076" rotation=""></a-entity>
+
+    </a-entity>
+
+
+    
+    
+    <a-entity id="exhibition-panel" position="4.81835 0 0">
+
+        <a-image src="assets/bench ss.png" position="0 2.131 0.04893" scale="1.84272 1.84272 1.84272" material="" geometry=""></a-image>
+
+        <a-entity id="panel" geometry="" material="src: assets/stone texture.jpeg" position="0 1.91862 0" scale="3.01323 2.80034 0.07076" rotation=""></a-entity>
+
+    </a-entity>
+
+       <a-entity id="ground" geometry="primitive: cylinder" scale="20 1 20" material="src: assets/ground-black-tile.jpeg; repeat: 12 12; roughness: 1"></a-entity>
+       
+       <a-sky src="assets/sky.jpeg"></a-sky>a-sky>
+   </a-scene>
+</body>
+</html>
